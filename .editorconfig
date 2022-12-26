@@ -1,0 +1,17 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = false
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.json, *.yml, *.yaml]
+indent_style = tab
+indent_size = 2
+
+[*.ts, *.tsx, *.js, *.jsx]
+indent_style = tab
+indent_size = 2
