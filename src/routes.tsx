@@ -8,12 +8,7 @@ const rootRoute = createRouteConfig({
 
 const homeRoute = rootRoute.createRoute({
   path: '/',
-  component: lazy(() => import('./pages/home')),
-})
-
-const aboutRoute = rootRoute.createRoute({
-  path: '/about',
-  component: lazy(() => import('./pages/about')),
+  component: lazy(() => import('./pages/home/home')),
 })
 
 const notFoundRoute = rootRoute.createRoute({
@@ -22,7 +17,7 @@ const notFoundRoute = rootRoute.createRoute({
 })
 
 
-const routeConfig = rootRoute.addChildren([homeRoute, aboutRoute, notFoundRoute])
+const routeConfig = rootRoute.addChildren([homeRoute, notFoundRoute])
 
 export const router = createReactRouter({ routeConfig })
 
